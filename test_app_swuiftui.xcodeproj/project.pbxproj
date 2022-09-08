@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E05744928C69C08006470DE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E05744828C69C08006470DE /* CustomTextField.swift */; };
 		3E546BFE28C2163400CEBD29 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 3E546BFD28C2163400CEBD29 /* RiveRuntime */; };
 		3E546C0028C2173A00CEBD29 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E546BFF28C2173A00CEBD29 /* OnboardingView.swift */; };
 		3E546C0928C218C500CEBD29 /* house.riv in Resources */ = {isa = PBXBuildFile; fileRef = 3E546C0228C218C500CEBD29 /* house.riv */; };
@@ -19,8 +20,9 @@
 		3E546C1428C25D5400CEBD29 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E546C1128C25D5400CEBD29 /* Inter-Regular.ttf */; };
 		3E546C1528C25D5400CEBD29 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E546C1228C25D5400CEBD29 /* Poppins-Bold.ttf */; };
 		3E546C1628C25D5400CEBD29 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E546C1328C25D5400CEBD29 /* Inter-SemiBold.ttf */; };
+		3E546C1828C2607800CEBD29 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E546C1728C2607800CEBD29 /* CustomFont.swift */; };
+		3E546C1B28C6664B00CEBD29 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E546C1A28C6664B00CEBD29 /* SignInView.swift */; };
 		3EDDEF8028BA31A30043FEEB /* test_app_swuiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDEF7F28BA31A30043FEEB /* test_app_swuiftuiApp.swift */; };
-		3EDDEF8228BA31A30043FEEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDEF8128BA31A30043FEEB /* ContentView.swift */; };
 		3EDDEF8428BA31A50043FEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDDEF8328BA31A50043FEEB /* Assets.xcassets */; };
 		3EDDEF8728BA31A50043FEEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDDEF8628BA31A50043FEEB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E05744828C69C08006470DE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3E546BFF28C2173A00CEBD29 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3E546C0228C218C500CEBD29 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
 		3E546C0328C218C500CEBD29 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
@@ -54,9 +57,11 @@
 		3E546C1128C25D5400CEBD29 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		3E546C1228C25D5400CEBD29 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		3E546C1328C25D5400CEBD29 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		3E546C1728C2607800CEBD29 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		3E546C1928C65E4600CEBD29 /* test-app-swuiftui-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "test-app-swuiftui-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3E546C1A28C6664B00CEBD29 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3EDDEF7C28BA31A30043FEEB /* test_app_swuiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_app_swuiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDDEF7F28BA31A30043FEEB /* test_app_swuiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_app_swuiftuiApp.swift; sourceTree = "<group>"; };
-		3EDDEF8128BA31A30043FEEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EDDEF8328BA31A50043FEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EDDEF8628BA31A50043FEEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3EDDEF8C28BA31A50043FEEB /* test_app_swuiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_app_swuiftuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,9 +139,12 @@
 		3EDDEF7E28BA31A30043FEEB /* test_app_swuiftui */ = {
 			isa = PBXGroup;
 			children = (
+				3E546C1928C65E4600CEBD29 /* test-app-swuiftui-Info.plist */,
 				3EDDEF7F28BA31A30043FEEB /* test_app_swuiftuiApp.swift */,
-				3EDDEF8128BA31A30043FEEB /* ContentView.swift */,
 				3E546BFF28C2173A00CEBD29 /* OnboardingView.swift */,
+				3E546C1A28C6664B00CEBD29 /* SignInView.swift */,
+				3E05744828C69C08006470DE /* CustomTextField.swift */,
+				3E546C1728C2607800CEBD29 /* CustomFont.swift */,
 				3EDDEF8328BA31A50043FEEB /* Assets.xcassets */,
 				3E546C1028C25D5400CEBD29 /* Fonts */,
 				3E546C0128C218C500CEBD29 /* RiveAssets */,
@@ -300,8 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E546C0028C2173A00CEBD29 /* OnboardingView.swift in Sources */,
-				3EDDEF8228BA31A30043FEEB /* ContentView.swift in Sources */,
+				3E546C1828C2607800CEBD29 /* CustomFont.swift in Sources */,
+				3E05744928C69C08006470DE /* CustomTextField.swift in Sources */,
 				3EDDEF8028BA31A30043FEEB /* test_app_swuiftuiApp.swift in Sources */,
+				3E546C1B28C6664B00CEBD29 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +470,7 @@
 				DEVELOPMENT_TEAM = HANP8TG95X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-app-swuiftui-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -489,6 +500,7 @@
 				DEVELOPMENT_TEAM = HANP8TG95X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-app-swuiftui-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
