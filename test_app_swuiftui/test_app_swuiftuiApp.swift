@@ -11,7 +11,7 @@ import SwiftUI
 struct test_app_swuiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            ContentView()
         }
     }
 }
