@@ -23,6 +23,7 @@ struct VCard: View {
                 Text(course.subtitle)
                     .customFont(.subheadline)
                     .opacity(0.7)
+                    .frame(maxWidth: 170, alignment: .leading)
                 Text(course.caption)
                     .customFont(.footnote)
                     .opacity(0.7)
@@ -39,12 +40,20 @@ struct VCard: View {
                     }
                 }
             }
-            .padding(.vertical, 25)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 32)
+            .padding(.horizontal, 24)
             .foregroundColor(.white)
         }
         .frame(width: 260, height: 310)
         .background(.linearGradient(colors: [course.color, course.color.opacity(0.7)], startPoint: .topLeading, endPoint: .bottomTrailing))
         .mask(RoundedRectangle(cornerRadius: 30))
         .shadow(color: course.color.opacity(0.3), radius: 5, x: 0, y: 6)
+    }
+}
+
+struct VCard_Previews: PreviewProvider {
+    static var previews: some View {
+        VCard(course: courses[2])
     }
 }

@@ -11,6 +11,7 @@ import RiveRuntime
 struct OnboardingView: View {
     let button = RiveViewModel(fileName: "button")
     @State var showModal: Bool = false
+    @AppStorage("showLogin") var showLogin: Bool = false
     
     var body: some View {
         ZStack {
@@ -24,7 +25,7 @@ struct OnboardingView: View {
                 .ignoresSafeArea()
             
             if showModal {
-                SignInView()
+                SignInView(showModal: $showModal)
                     .transition(
                         .move(edge: .bottom)
                     )
@@ -69,7 +70,7 @@ struct OnboardingView: View {
             button.view()
                 .frame(width: 236, height: 64)
                 .overlay(
-                    Label("Start the course", systemImage: "arrow.forward")
+                    Label("Start the courses", systemImage: "arrow.forward")
                         .offset(x: 3, y: 4)
                         .font(.headline)
                 )
@@ -89,17 +90,23 @@ struct OnboardingView: View {
                     }
                 }
             
+            Button(action: {
+                withAnimation(.spring()) {
+                    showLogin = false
+                }
+            }, label: {
+                Text("Or keep discovering")
+                    .underline()
+                    .customFont(.subheadline)
+                    .foregroundColor(.black)
+            })
+            
             Text("Purchase includes access to 30+ courses, 240+ premium tutorials, 120+ hours of videos, source files and certificates.")
                 .customFont(.footnote)
                 .opacity(0.7)
+                .padding(.top)
         }
         .padding(40)
         .padding([.top, .bottom], 40)
-    }
-}
-
-struct OnboardingView_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboardingView()
     }
 }

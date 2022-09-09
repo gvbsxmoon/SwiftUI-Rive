@@ -10,6 +10,8 @@ import SwiftUI
 struct SignInView: View {
     @State var email: String = ""
     @State var password: String = ""
+    @AppStorage("showLogin") var showLogin: Bool = false
+    @Binding var showModal: Bool
     
     var body: some View {
         VStack(spacing: 16) {
@@ -46,7 +48,12 @@ struct SignInView: View {
                     .customTextField("Icon Lock")
             }
             
-            Label("Sign in", systemImage: "arrow.right")
+            Button {
+                withAnimation(.spring()) {
+                    showLogin = false
+                }
+            } label: {
+                Label("Sign in", systemImage: "arrow.right")
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.pink.opacity(0.3))
@@ -54,6 +61,7 @@ struct SignInView: View {
                 .cornerRadius(16)
                 .shadow(color: .pink.opacity(0.5), radius: 10, x: 0, y: 3)
                 .overlay(RoundedRectangle(cornerRadius: 16).stroke(.white.opacity(0.5)))
+            }
             
             HStack(alignment: .center, spacing: 12) {
                 Rectangle()
@@ -86,11 +94,5 @@ struct SignInView: View {
         .shadow(color: Color.black.opacity(0.2), radius: 30, x: 0, y: 30)
         .overlay(RoundedRectangle(cornerRadius: 30).stroke(Color.black.opacity(0.1)))
         .padding()
-    }
-}
-
-struct SignInView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignInView()
     }
 }
